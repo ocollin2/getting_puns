@@ -4,7 +4,7 @@ import requests
 import json
 
 # download a random pun from https://www.punapi.rest/
-pun_request = requests.get("https://www.punapi.rest/api/pun")
-pun_data = json.loads(pun_request.content)
+pun_url_request = requests.get("https://www.punapi.rest/api/pun")
+pun_data = json.loads(pun_url_request.content)
 
 print(pun_data)
